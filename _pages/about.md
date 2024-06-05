@@ -21,10 +21,17 @@ Publications
 <ul>
 
 <li>
+<b>Rotation and Permutation for Advanced Outlier Management and Efficient Quantization of LLMs.</b><br>
+<i>Haokun Lin*, <b>Haobo Xu*</b>, Yichen Wu*, Jingzhi Cui, Yingtao Zhang, Linzhan Mou, Linqi Song, Zhenan Sun, Ying Wei.</i><br>
+Preprint, 2024.<br>
+</li>
+
+<li>
 <b>SLOG: An Inductive Spectral Graph Neural Network Beyond Polynomial Filter.</b><br>
 <i><b>Haobo Xu*</b>, Yuchen Yan*, Dingsu Wang, Zhe Xu, Zhichen Zeng, Tarek F. Abdelzaher, Jiawei Han, Hanghang Tong.</i><br>
 Forty-first International Conference on Machine Learning (ICML), 2024.<br>
 </li>
+
 
 </ul>
 
@@ -48,7 +55,7 @@ Efficient hyper-parameter optimization for Knowledge graph models.
 
 Services
 ======
-* Reviewer: AAAI 2023, IEEE BigData 2023.
+* Reviewer: AAAI 2023, IEEE BigData 2023, NeurIPS 2024.
 
 Awards
 ======
