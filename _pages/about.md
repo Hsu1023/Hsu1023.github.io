@@ -9,7 +9,7 @@ redirect_from:
 
 Welcome to my homepage! 
 
-I am a junior undergraduate student in Department of Software, Tsinghua University. I am currently working on the research of graph mining under the supervision of Prof. [Hanghang Tong](http://http://tonghanghang.org/) at University of Illinois at Urbana-Champaign. Before that, I worked under the supervision of Prof. [Quanming Yao](https://lars-group.github.io/) at Tsinghua University. I am now also a research intern at KAUST.
+I am a junior undergraduate student in Department of Software, Tsinghua University. I am currently working on the research of graph mining under the supervision of Prof. [Hanghang Tong](http://http://tonghanghang.org/) at University of Illinois at Urbana-Champaign. Before that, I worked under the supervision of Prof. [Quanming Yao](https://lars-group.github.io/) at Tsinghua University. I am now also a research intern at KAUST, advised by Prof. [Mohamed Elhoseiny](https://scholar.google.com/citations?user=iRBUTOAAAAAJ&hl=en).
 
 My research interests include:
 * Enhancing the robustness, scalability, and interpretability of graph neural networks.
@@ -42,23 +42,24 @@ Experience
 <li>
 <b>University of Illinois at Urbana-Champaign</b>, Aug. 2023 - Present<br>
 <i>Research Intern, supervised by Prof. Hanghang Tong</i><br>
-Towards robust, efficient, and scalable graph kernel.<br>
+Towards robust, efficient, and scalable graph kernel & length extrapolation for LLMs.<br>
 </li>
 
 <li>
 <b>Tsinghua University</b>, Feb. 2022 - Jun. 2023<br>
 <i>Research Intern, supervised by Prof. Quanming Yao</i><br>
-Efficient hyper-parameter optimization for Knowledge graph models.
+Efficient hyper-parameter optimization for knowledge graph models.
 </li>
 
 </ul>
 
 Services
 ======
-* Reviewer: AAAI 2023, IEEE BigData 2023, NeurIPS 2024.
+* Program Committee/Reviewer: IEEE BigData 2023, AAAI 2024, NeurIPS 2024, AAAI 2025.
 
 Awards
 ======
+* ICML 2024 Grant Award.
 * Comprehensive Excellence Award of Tsinghua University (2021, 2022 & 2023).
 * First Prize in National Olympiad in Informatics in Provinces (NOIP) of China (2017 & 2018).
 * First Provincial-level in Chinese Physics Olympiad (2018 & 2019).
