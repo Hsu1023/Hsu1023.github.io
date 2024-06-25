@@ -32,6 +32,12 @@ Preprint, 2024.<br>
 Forty-first International Conference on Machine Learning (ICML), 2024.<br>
 </li>
 
+<li>
+<b>KGTuner+: Automated and Efficient Hyper-parameter Search for KG Learning.</b><br>
+<i>Zhanke Zhou, Yongqi Zhang, <b>Haobo Xu</b>, Quanming Yao, Bo Han</i><br>
+Under Review at TPAMI (IEEE Transactions on Pattern Analysis and Machine Intelligence).<br>
+</li>
+
 
 </ul>
 
@@ -59,7 +65,7 @@ Services
 
 Awards
 ======
-* ICML 2024 Grant Award.
+* ICML 2024 Travel Award.
 * Comprehensive Excellence Award of Tsinghua University (2021, 2022 & 2023).
 * First Prize in National Olympiad in Informatics in Provinces (NOIP) of China (2017 & 2018).
 * First Provincial-level in Chinese Physics Olympiad (2018 & 2019).
