@@ -28,7 +28,7 @@
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i> {{ author.location }}</li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__desktop"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
+        <li class="author__desktop" style="margin-top: 2px;"><i class="fa fa-solid fa-building-columns icon-pad-right" aria-hidden="true"></i>{{ author.employer }}</li>
       {% endif %}
       {% if author.uri %}
         <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link icon-pad-right" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].website_label | default: "Website" }}</a></li>
@@ -42,7 +42,7 @@
         <li><a href="{{ author.arxiv }}"><i class="ai ai-arxiv ai-fw icon-pad-right"></i> arXiv</a></li>
       {% endif %}      
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar icon-pad-right"></i> Google Scholar</a></li>
+        <li style="margin-top: -4px;"><a href="{{ author.googlescholar }}"><i class="ai ai-google-scholar icon-pad-right"></i> Google Scholar</a></li>
       {% endif %}
       {% if author.impactstory %}
         <li><a href="{{ author.impactstory }}"><i class="ai ai-impactstory ai-fw icon-pad-right"></i> Impactstory</a></li>
@@ -68,7 +68,7 @@
         <li><a href="https://dribbble.com/{{ author.dribbble }}"><i class="fab fa-fw fa-dribbble icon-pad-right" aria-hidden="true"></i>Dribbble</a></li>
       {% endif %}      
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i> Github</a></li>
+        <li style="margin-top: -3px;"><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github icon-pad-right" aria-hidden="true"></i> Github</a></li>
       {% endif %}
       {% if author.kaggle %}
         <li><a href="https://kaggle.com/{{ author.kaggle }}"><i class="fab fa-fw fa-kaggle icon-pad-right" aria-hidden="true"></i> Kaggle</a></li>
