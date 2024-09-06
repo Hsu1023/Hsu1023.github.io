@@ -9,7 +9,7 @@ redirect_from:
 
 Welcome to my homepage! 
 
-I am a junior undergraduate student in Department of Software, Tsinghua University. I am currently working on the research of graph mining under the supervision of Prof. [Hanghang Tong](http://http://tonghanghang.org/) at University of Illinois at Urbana-Champaign. Before that, I worked under the supervision of Prof. [Quanming Yao](https://lars-group.github.io/) at Tsinghua University. I am now also a research intern at KAUST, advised by Prof. [Mohamed Elhoseiny](https://scholar.google.com/citations?user=iRBUTOAAAAAJ&hl=en).
+I am a senior undergraduate student in Department of Software, Tsinghua University. I am currently working on the research of graph mining under the supervision of Prof. [Hanghang Tong](http://tonghanghang.org/) at University of Illinois at Urbana-Champaign. Before that, I worked under the supervision of Prof. [Quanming Yao](https://lars-group.github.io/) at Tsinghua University. I am now also a research intern at KAUST, advised by Prof. [Mohamed Elhoseiny](https://scholar.google.com/citations?user=iRBUTOAAAAAJ&hl=en).
 
 My research interests include:
 * Enhancing the robustness, scalability, and interpretability of graph neural networks.
