@@ -24,12 +24,14 @@ Publications
 <b>Rotation and Permutation for Advanced Outlier Management and Efficient Quantization of LLMs.</b><br>
 <i>Haokun Lin*, <b>Haobo Xu*</b>, Yichen Wu*, Jingzhi Cui, Yingtao Zhang, Linzhan Mou, Linqi Song, Zhenan Sun, Ying Wei.</i><br>
 Preprint, 2024.<br>
+<a href="https://arxiv.org/abs/2406.01721">[Paper]</a> <a href="https://github.com/Hsu1023/DuQuant">[Code]</a>
 </li>
 
 <li>
 <b>SLOG: An Inductive Spectral Graph Neural Network Beyond Polynomial Filter.</b><br>
 <i><b>Haobo Xu*</b>, Yuchen Yan*, Dingsu Wang, Zhe Xu, Zhichen Zeng, Tarek F. Abdelzaher, Jiawei Han, Hanghang Tong.</i><br>
 Forty-first International Conference on Machine Learning (ICML), 2024.<br>
+<a href="https://openreview.net/pdf?id=0SrNCSklZx">[Paper]</a> <a href="https://github.com/Hsu1023/SLOG">[Code]</a>
 </li>
 
 <li>
