@@ -15,15 +15,32 @@ My research interests include:
 * Enhancing the robustness, scalability, and interpretability of graph neural networks.
 * Pioneering innovations to accelerate large language model prediction.
 
+
+News
+======
+<ul>
+<li>
+[Sep 2024] Our paper "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs" was accepted by NeurIPS 2024 <font color="#ff0000">as an oral</font>! 🎉🎉🎉
+</li>
+<li>
+[Jun 2024] Happy to receive the ICML Travel Award (2024)!
+</li>
+<li>
+[May 2024] Our paper "SLOG: An Inductive Spectral Graph Neural Network Beyond Polynomial Filter" was accepted by ICML 2024!
+</li>
+
+</ul>
+
+
 Publications
 ======
 
 <ul>
 
 <li>
-<b>Rotation and Permutation for Advanced Outlier Management and Efficient Quantization of LLMs.</b><br>
+<b>DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs.</b><br>
 <i>Haokun Lin*, <b>Haobo Xu*</b>, Yichen Wu*, Jingzhi Cui, Yingtao Zhang, Linzhan Mou, Linqi Song, Zhenan Sun, Ying Wei.</i><br>
-Preprint, 2024.<br>
+The Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS), 2024. <font color="#ff0000">[Oral]</font> <br>
 <a href="https://arxiv.org/abs/2406.01721">[Paper]</a> <a href="https://github.com/Hsu1023/DuQuant">[Code]</a>
 </li>
 
