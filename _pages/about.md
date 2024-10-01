@@ -80,7 +80,7 @@ Efficient hyper-parameter optimization for knowledge graph models.
 
 Services
 ======
-* Program Committee/Reviewer: IEEE BigData 2023, AAAI 2024, NeurIPS 2024, AAAI 2025, ICLR 2025.
+* Program Committee/Reviewer: IEEE BigData 2023, AAAI 2024, NeurIPS 2024, AAAI 2025, ICLR 2025, AISTATS 2025.
 
 Awards
 ======
