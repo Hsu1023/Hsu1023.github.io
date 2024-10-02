@@ -15,6 +15,7 @@ My research interests include:
 * Enhancing the robustness, scalability, and interpretability of graph neural networks.
 * Pioneering innovations to accelerate large language model prediction.
 
+<font color="#ff0000">I am seeking a PhD position starting in Fall 2025. If you are interested in my research, please feel free to contact me at xuhb20@mails.tsinghua.edu.cn.</font>
 
 News
 ======
