@@ -15,13 +15,14 @@ My research interests include:
 * Enhancing the robustness, scalability, and interpretability of graph neural networks.
 * Pioneering innovations to accelerate large language model prediction.
 
-<font color="#ff0000">I am seeking a PhD position starting in Fall 2025. If you are interested in my research, please feel free to contact me at xuhb20@mails.tsinghua.edu.cn.</font>
+<font color="#e67300">I am seeking a PhD position starting in Fall 2025. If you are interested in my research, please feel free to contact me at <a href="xuhb20@mails.tsinghua.edu.cn">xuhb20@mails.tsinghua.edu.cn</a>.</font>
+<p></p>
 
 News
 ======
 <ul>
 <li>
-[Sep 2024] Our paper "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs" was accepted by NeurIPS 2024 <font color="#ff0000">as an oral</font>! 🎉🎉🎉
+[Sep 2024] Our paper "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs" was accepted by NeurIPS 2024 <font color="#e67300">as an oral</font>! 🎉🎉🎉
 </li>
 <li>
 [Jun 2024] Happy to receive the ICML Travel Award (2024)!
@@ -41,7 +42,7 @@ Publications
 <li>
 <b>DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs.</b><br>
 <i>Haokun Lin*, <b>Haobo Xu*</b>, Yichen Wu*, Jingzhi Cui, Yingtao Zhang, Linzhan Mou, Linqi Song, Zhenan Sun, Ying Wei.</i><br>
-The Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS), 2024. <font color="#ff0000">[Oral]</font> <br>
+The Thirty-eighth Annual Conference on Neural Information Processing Systems (NeurIPS), 2024. <font color="#e67300">[Oral]</font> <br>
 <a href="https://arxiv.org/abs/2406.01721">[Paper]</a> <a href="https://github.com/Hsu1023/DuQuant">[Code]</a>
 </li>
 
