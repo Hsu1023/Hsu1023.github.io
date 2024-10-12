@@ -22,6 +22,9 @@ News
 ======
 <ul>
 <li>
+[Oct 2024] Happy to receive the NeurIPS Travel Award (2024)!
+</li>
+<li>
 [Sep 2024] Our paper "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs" was accepted by NeurIPS 2024 <font color="#e67300">as an oral</font>! 🎉🎉🎉
 </li>
 <li>
@@ -86,7 +89,12 @@ Services
 
 Awards
 ======
+* NeurIPS 2024 Travel Award.
 * ICML 2024 Travel Award.
 * Comprehensive Excellence Award of Tsinghua University (2021, 2022 & 2023).
 * First Prize in National Olympiad in Informatics in Provinces (NOIP) of China (2017 & 2018).
 * First Provincial-level in Chinese Physics Olympiad (2018 & 2019).
+
+<div style="margin-top: 50pt; margin-bottom: -50pt">
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=0ivL951BYQhgdBrwSBwALql27Fh5Q3TFyHnbC_TQN3M&cl=ffffff&w=405"></script>
+</div>
