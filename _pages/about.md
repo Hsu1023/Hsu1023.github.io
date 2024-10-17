@@ -22,16 +22,19 @@ News
 ======
 <ul>
 <li>
-[Oct 2024] Happy to receive the NeurIPS Travel Award (2024)!
+[Oct 2024] Grateful to be awarded the National Scholarship! 🎓
+</li>
+<li>
+[Oct 2024] Happy to receive the NeurIPS 2024 Travel Award! 🏅
 </li>
 <li>
 [Sep 2024] Our paper "DuQuant: Distributing Outliers via Dual Transformation Makes Stronger Quantized LLMs" was accepted by NeurIPS 2024 <font color="#e67300">as an oral</font>! 🎉🎉🎉
 </li>
 <li>
-[Jun 2024] Happy to receive the ICML Travel Award (2024)!
+[Jun 2024] Happy to receive the ICML 2024 Travel Award! 🏅
 </li>
 <li>
-[May 2024] Our paper "SLOG: An Inductive Spectral Graph Neural Network Beyond Polynomial Filter" was accepted by ICML 2024!
+[May 2024] Our paper "SLOG: An Inductive Spectral Graph Neural Network Beyond Polynomial Filter" was accepted by ICML 2024! 🚀
 </li>
 
 </ul>
@@ -89,11 +92,12 @@ Services
 
 Awards
 ======
+* National Scholarship, P.R.China, 2024.
 * NeurIPS 2024 Travel Award.
 * ICML 2024 Travel Award.
-* Comprehensive Excellence Award of Tsinghua University (2021, 2022 & 2023).
-* First Prize in National Olympiad in Informatics in Provinces (NOIP) of China (2017 & 2018).
-* First Provincial-level in Chinese Physics Olympiad (2018 & 2019).
+* Comprehensive Excellence Award, Tsinghua University (2021 - 2024).
+* First Prize in National Olympiad in Informatics in Provinces (NOIP) of China (2017, 2018).
+* First Provincial-level in Chinese Physics Olympiad (2018, 2019).
 
 <div style="margin-top: 50pt; margin-bottom: -50pt">
 <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=0ivL951BYQhgdBrwSBwALql27Fh5Q3TFyHnbC_TQN3M&cl=ffffff&w=405"></script>
