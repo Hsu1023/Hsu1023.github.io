@@ -1,0 +1,10 @@
+
+<span></span>
+<div class="awards">
+  <ul class="awards-list">
+    {% for r in site.data.awards %}
+      <!-- <li><span class="year">{{ r.year }}</span> — <strong>{{ r.title }}</strong></li> -->
+       <li><strong>{{ r.title }}</strong>, <span class="year">{{ r.year }}</span></li>
+    {% endfor %}
+  </ul>
+</div>

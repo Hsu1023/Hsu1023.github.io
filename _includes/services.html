@@ -1,0 +1,35 @@
+<div class="services">
+
+  <ul class="svc-top">
+    {% for s in site.data.services %}
+      <li>
+        <strong>{{ s.role }}:</strong>
+        <ul class="svc-sub">
+          {% for it in s.items %}
+            <li>
+              {%- comment -%}
+              兼容两种数据结构：
+              A) 纯字符串：直接输出
+              B) 对象：支持 prefix / link / suffix
+              {%- endcomment -%}
+              {% if it | split: '' | first %}{% endif %}
+              {% if it.text or it.prefix or it.link_text %}
+                {% if it.prefix %}{{ it.prefix }}{% endif %}
+                {% if it.link_text and it.link_url %}
+                  <a href="{{ it.link_url }}" target="_blank" rel="noopener">{{ it.link_text }}</a>
+                {% elsif it.text %}
+                  {{ it.text }}
+                {% else %}
+                  {{ it.link_text }}
+                {% endif %}
+                {% if it.suffix %}{{ it.suffix }}{% endif %}
+              {% else %}
+                {{ it }}
+              {% endif %}
+            </li>
+          {% endfor %}
+        </ul>
+      </li>
+    {% endfor %}
+  </ul>
+</div>

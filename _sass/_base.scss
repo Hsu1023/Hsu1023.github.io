@@ -654,8 +654,8 @@ footer.sticky-bottom {
       justify-content: center;
 
       img {
-        max-width: 120px;
-        max-height: 120px;
+        max-width: 100px;
+        max-height: 100px;
         width: auto;
         height: auto;
         object-fit: contain;
@@ -738,7 +738,45 @@ footer.sticky-bottom {
     }
   }
 }
+.awards {
+  margin-top: 2rem;
 
+  h1 {
+    color: var(--global-theme-color);
+    font-size: 2rem;
+    margin: 0.5em 0 1em;
+  }
+
+  .awards-list {
+    margin: 0;
+    padding-left: 1.1rem;
+
+    li { margin: .35rem 0; line-height: 1.5; }
+    .year { color: var(--global-text-color-light); }
+  }
+}
+
+.services {
+  margin-top: 1rem;
+
+  h1 {
+    color: var(--global-theme-color);
+    font-size: 2rem;
+    margin: .5em 0 1em;
+  }
+
+  .svc-top {
+    margin: 0;
+    padding-left: 1.1rem;   /* 一级圆点缩进 */
+    li { line-height: 1.6; margin: .25rem 0; }
+
+    .svc-sub {
+      margin-top: .4rem;
+      padding-left: 1.5rem; /* 二级圆点更深一点 */
+      li { margin: .35rem 0; }
+    }
+  }
+}
 // Publications
 
 .publications {

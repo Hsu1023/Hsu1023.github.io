@@ -61,26 +61,45 @@ layout: default
             <h2>Education</h2>
             {%- include education.html %}
           {%- endif %}
+          
 
           <!-- Selected papers -->
           {% if page.papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include papers.html %}
           {%- endif %}
+          
+          <span></span>
+          {% if page.awards -%}
+            <h2>Awards & Honors</h2>
+            {%- include awards.html %}
+          {%- endif %}
 
-          <!-- Social -->
-          <!-- {%- if page.social %}
-            <div class="social">
-              <div class="contact-icons">
-                {% include social.html %}
-              </div>
-
-              <div class="contact-note">
-                {{ site.contact_note }}
-              </div>
-
-            </div>
-          {%- endif %} -->
+          <div style="height: 20px"></div>
+          {% if page.services -%}
+            <h2>Services</h2>
+            {%- include services.html %}
+          {%- endif %}
+        
         </article>
 
+<!-- <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=0ivL951BYQhgdBrwSBwALql27Fh5Q3TFyHnbC_TQN3M&cl=ffffff&w=a"></script> -->
+<div style="text-align:center; margin-top:10px;">
+  <!-- 分隔线 -->
+  <hr style="border:0; border-top:1px solid var(--global-divider-color, #e5e7eb); width:min(720px, 92%); margin:28px auto 16px auto;">
+
+  <h3 style="margin:0 0 10px 0;">Site Analytics</h3>
+
+  <a href="https://clustrmaps.com/site/1c1oi" title="ClustrMaps" style="display:inline-block; width:clamp(120px, 30vw, 270px);">
+    <img 
+      src="https://www.clustrmaps.com/map_v2.png?d=0ivL951BYQhgdBrwSBwALql27Fh5Q3TFyHnbC_TQN3M&cl=ffffff"
+      alt="Visitor map"
+      style="display:block; width:100%; height:auto; border:0;"
+      loading="lazy"
+      decoding="async"
+    >
+  </a>
+
+  <script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=0ivL951BYQhgdBrwSBwALql27Fh5Q3TFyHnbC_TQN3M&cl=ffffff&w=a"></script>
+</div>
 </div>

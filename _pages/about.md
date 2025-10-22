@@ -18,6 +18,8 @@ news:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 papers: true # includes a list of papers marked as "selected={true}"
 education: true # includes a list of education items
+awards: true # includes a list of awards & honors items
+services: true # includes a list of services items
 
 # announcements:
 #   enabled: true # includes a list of news items
@@ -33,7 +35,6 @@ education: true # includes a list of education items
 Welcome to my homepage! 
 
 I am a Ph.D. student at the University of Illinois at Urbana-Champaign, where I am fortunate to be advised by Prof. [Hanghang Tong](http://tonghanghang.org/). Prior to this, I obtained my bachelor's degree in Software Engineering from Tsinghua University.
-<!-- I will begin my Ph.D. at the  in Fall 2025, fortunate to be supervised by Prof. Hanghang Tong. -->
 
 
 My research interests include <u>Multi-modal Learning</u>, <u>Efficient Deep Learning</u>, and <u>Large Language Models</u>.
