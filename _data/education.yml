@@ -1,0 +1,33 @@
+- school: University of Illinois Urbana-Champaign
+  school_url: https://illinois.edu
+  logo: uiuc.png
+  degree: Ph.D. in Computer Science
+  field: Vision-Language-Action, Graph Reasoning
+  start: 2025
+  end: Present
+  location: Urbana, IL, USA
+  # gpa:
+  # highlights:
+  #   - Research assistant in Graph Reasoning & Robotics Lab
+  #   - ACCESS/Delta HPC projects; GRPO/VLLM/FSDP stack
+  # links:
+  #   Thesis:
+  #   Transcript:
+  #   Web: https://cs.illinois.edu
+
+- school: Tsinghua University
+  school_url: https://www.tsinghua.edu.cn
+  logo: tsinghua.png
+  degree: B.Eng. in Software Engineering
+  field: Data-Driven Wind Turbine Control
+  start: 2020
+  end: 2025
+  location: Beijing, China
+  # gpa: 
+  # links:
+  #   Thesis: 
+  #   Web: 
+
+  
+  # highlights:
+  #   - 

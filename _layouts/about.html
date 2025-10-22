@@ -6,7 +6,10 @@ layout: default
       <div class="post">
         <header class="post-header">
           <h1 class="post-title">
-            {% if site.title == "blank" -%}<span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}{%- else -%}{{ site.title }}{%- endif %}
+            {% if site.title == "blank" -%}<span class="font-weight-bold">
+              {{ site.first_name }}</span> {{ site.middle_name }} {{ site.last_name }}</span> 
+                {% include contact.html %}
+            {%- else -%}{{ site.title }}{%- endif %}
           </h1>
           <p class="desc">{{ page.subtitle }}</p>
         </header>
@@ -49,18 +52,24 @@ layout: default
 
           <!-- Latest posts -->
           {% if page.latest_posts -%}
-            <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">News</a></h2>
+            <!-- <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">News</a></h2> -->
+            <h2>News</h2>
             {%- include latest_posts.html %}
+          {%- endif %}
+           
+          {% if page.education -%}
+            <h2>Education</h2>
+            {%- include education.html %}
           {%- endif %}
 
           <!-- Selected papers -->
-          {% if page.selected_papers -%}
+          {% if page.papers -%}
             <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
-            {%- include selected_papers.html %}
+            {%- include papers.html %}
           {%- endif %}
 
           <!-- Social -->
-          {%- if page.social %}
+          <!-- {%- if page.social %}
             <div class="social">
               <div class="contact-icons">
                 {% include social.html %}
@@ -71,7 +80,7 @@ layout: default
               </div>
 
             </div>
-          {%- endif %}
+          {%- endif %} -->
         </article>
 
 </div>

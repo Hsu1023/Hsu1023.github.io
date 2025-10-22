@@ -1,0 +1,69 @@
+<div class="education">
+
+  <ul class="edu-list">
+    {% for e in site.data.education %}
+    <li class="edu-item">
+      <div class="edu-logo">
+        {% if e.school_url %}
+          <a href="{{ e.school_url }}" target="_blank" rel="noopener">
+            <img src="/assets/img/education_logo/{{ e.logo | relative_url }}" alt="{{ e.school }} logo">
+          </a>
+        {% else %}
+          <img src="{{ e.logo | relative_url }}" alt="{{ e.school }} logo">
+        {% endif %}
+      </div>
+
+      <div class="edu-content">
+        <div class="edu-head">
+          <h3 class="edu-title">
+            <span class="degree">{{ e.degree }}</span>
+            <span class="at"> @ </span>
+            {% if e.school_url %}
+              <a class="school" href="{{ e.school_url }}" target="_blank" rel="noopener">{{ e.school }}</a>
+            {% else %}
+              <span class="school">{{ e.school }}</span>
+            {% endif %}
+          </h3>
+
+          <div class="edu-meta">
+            <span class="dates">{{ e.start }} – {{ e.end }}</span>
+            {% if e.location %}<span class="dot">•</span><span class="loc">{{ e.location }}</span>{% endif %}
+            {% if e.gpa %}<span class="dot">•</span><span class="gpa">GPA: {{ e.gpa }}</span>{% endif %}
+          </div>
+        </div>
+
+        {% if e.field %}
+          <div class="edu-field">{{ e.field }}</div>
+        {% endif %}
+
+        {% if e.advisors %}
+          <div class="edu-advisors">
+            Advisor{% if e.advisors.size > 1 %}s{% endif %}: 
+            {{ e.advisors | array_to_sentence_string }}
+          </div>
+        {% endif %}
+
+        {% if e.highlights %}
+          <ul class="edu-highlights">
+            {% for h in e.highlights %}
+              <li>{{ h }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        {% if e.links %}
+          <div class="edu-links">
+            {% for k in e.links %}
+              {% assign label = k[0] %}
+              {% assign url = k[1] %}
+              {% if url %}
+                <a class="btn" href="{{ url | relative_url }}" target="_blank" rel="noopener">{{ label }}</a>
+              {% endif %}
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

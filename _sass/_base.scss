@@ -622,6 +622,122 @@ footer.sticky-bottom {
   }
 }
 
+.education {
+  margin-top: 2rem;
+
+  h1 {
+    color: var(--global-theme-color);
+    font-size: 2rem;
+    text-align: left; 
+    margin: 0.5em 0 1.25em;
+  }
+
+  .edu-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .edu-item {
+    display: grid;
+    grid-template-columns: 128px 1fr;
+    gap: 1.25rem 1.5rem;
+    align-items: start;
+    padding: 1.25rem 0;
+    border-top: 1px solid var(--global-divider-color);
+
+    &:first-child { border-top: none; }
+
+    .edu-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        max-width: 120px;
+        max-height: 120px;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        filter: drop-shadow(0 1px 2px rgba(0,0,0,.08));
+      }
+    }
+
+    .edu-content {
+      .edu-head {
+        display: flex;
+        flex-direction: column;
+        gap: .35rem;
+      }
+
+      .edu-title {
+        margin: 0;
+        font-weight: 700;
+
+        .degree { font-size: 1.2rem; }
+        .at { opacity: .6; font-size: 1.2rem; }
+        .school, .school:visited {
+          color: var(--global-text-color);
+          border-bottom: 1px dashed var(--global-theme-color);
+          font-size: 1.2rem;
+        }
+        .school:hover { border-bottom-style: solid; text-decoration: none; }
+      }
+
+      .edu-meta {
+        font-size: .95rem;
+        color: var(--global-text-color-light);
+
+        .dot { margin: 0 .5rem; opacity: .6; }
+      }
+
+      .edu-field {
+        margin-top: .35rem;
+        font-size: .95rem;
+        color: var(--global-text-color);
+      }
+
+      .edu-advisors {
+        margin-top: .35rem;
+        font-size: .95rem;
+        color: var(--global-text-color-light);
+      }
+
+      .edu-highlights {
+        margin: .6rem 0 0;
+        padding-left: 1.2rem;
+
+        li {
+          margin: .15rem 0;
+          line-height: 1.45;
+        }
+      }
+
+      .edu-links {
+        margin-top: .7rem;
+
+        a.btn {
+          color: var(--global-text-color);
+          border: 1px solid var(--global-text-color);
+          padding: 0.25rem 0.75rem;
+          margin-right: 0.4rem;
+          border-radius: 999px;
+
+          &:hover {
+            color: var(--global-theme-color);
+            border-color: var(--global-theme-color);
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: 680px) {
+    .edu-item {
+      grid-template-columns: 1fr;
+      .edu-logo { justify-content: flex-start; }
+    }
+  }
+}
 
 // Publications
 
