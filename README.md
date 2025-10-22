@@ -2,8 +2,8 @@
 
 ## Run
 ```bash
-bundle install
-bundle exec jekyll serve --lsi --livereload
+sudo bundle install
+sudo bundle exec jekyll serve --lsi --livereload
 ```
 
 <div align="center">
