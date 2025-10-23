@@ -1,16 +1,18 @@
-name: Docker Image CI (Upload Tag)
+# name: Docker Image CI (Upload Tag)
 
+# on:
+#   push:
+#     tags:
+#       - "v*"
+#     paths:
+#       - "bin/entry_point.sh"
+#       - "Dockerfile"
+#       - "Gemfile"
+#       - "Gemfile.lock"
+#       - "package.json"
+#       - "package-lock.json"
 on:
-  push:
-    tags:
-      - "v*"
-    paths:
-      - "bin/entry_point.sh"
-      - "Dockerfile"
-      - "Gemfile"
-      - "Gemfile.lock"
-      - "package.json"
-      - "package-lock.json"
+  workflow_dispatch: {}   # 手动触发；去掉 repository_dispatch
 
 jobs:
   build:

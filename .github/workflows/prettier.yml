@@ -1,14 +1,16 @@
 name: Prettier code formatter
 
+# on:
+#   pull_request:
+#     branches:
+#       - master
+#       - main
+#   push:
+#     branches:
+#       - master
+#       - main
 on:
-  pull_request:
-    branches:
-      - master
-      - main
-  push:
-    branches:
-      - master
-      - main
+  workflow_dispatch: {}   # 手动触发；去掉 repository_dispatch
 
 jobs:
   check:

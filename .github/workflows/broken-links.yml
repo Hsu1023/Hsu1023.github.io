@@ -1,43 +1,46 @@
 name: Check for broken links
 
-on:
-  push:
-    branches:
-      - master
-      - main
-    paths:
-      - "assets/**"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
-      - "**/*.md"
-      - "**.yml"
-      - "!.github/workflows/axe.yml"
-      - "!.github/workflows/deploy-docker-tag.yml"
-      - "!.github/workflows/deploy-image.yml"
-      - "!.github/workflows/docker-slim.yml"
-      - "!.github/workflows/lighthouse-badger.yml"
-      - "!.github/workflows/prettier.yml"
-      - "!lighthouse_results/**"
-  pull_request:
-    branches:
-      - master
-      - main
-    paths:
-      - "assets/**"
-      - "**.html"
-      - "**.js"
-      - "**.liquid"
-      - "**/*.md"
-      - "**.yml"
-      - "!.github/workflows/axe.yml"
-      - "!.github/workflows/deploy-docker-tag.yml"
-      - "!.github/workflows/deploy-image.yml"
-      - "!.github/workflows/docker-slim.yml"
-      - "!.github/workflows/lighthouse-badger.yml"
-      - "!.github/workflows/prettier.yml"
-      - "!lighthouse_results/**"
+# on:
+#   push:
+#     branches:
+#       - master
+#       - main
+#     paths:
+#       - "assets/**"
+#       - "**.html"
+#       - "**.js"
+#       - "**.liquid"
+#       - "**/*.md"
+#       - "**.yml"
+#       - "!.github/workflows/axe.yml"
+#       - "!.github/workflows/deploy-docker-tag.yml"
+#       - "!.github/workflows/deploy-image.yml"
+#       - "!.github/workflows/docker-slim.yml"
+#       - "!.github/workflows/lighthouse-badger.yml"
+#       - "!.github/workflows/prettier.yml"
+#       - "!lighthouse_results/**"
+#   pull_request:
+#     branches:
+#       - master
+#       - main
+#     paths:
+#       - "assets/**"
+#       - "**.html"
+#       - "**.js"
+#       - "**.liquid"
+#       - "**/*.md"
+#       - "**.yml"
+#       - "!.github/workflows/axe.yml"
+#       - "!.github/workflows/deploy-docker-tag.yml"
+#       - "!.github/workflows/deploy-image.yml"
+#       - "!.github/workflows/docker-slim.yml"
+#       - "!.github/workflows/lighthouse-badger.yml"
+#       - "!.github/workflows/prettier.yml"
+#       - "!lighthouse_results/**"
 
+on:
+  workflow_dispatch: {}   # 手动触发；去掉 repository_dispatch
+  
 jobs:
   link-checker:
     runs-on: ubuntu-latest

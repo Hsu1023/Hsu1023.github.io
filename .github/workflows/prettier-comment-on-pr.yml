@@ -1,8 +1,10 @@
 name: Comment on pull request
 
+# on:
+#   repository_dispatch:
+#     types: [prettier-failed-on-pr]
 on:
-  repository_dispatch:
-    types: [prettier-failed-on-pr]
+  workflow_dispatch: {}   # 手动触发；去掉 repository_dispatch
 
 jobs:
   comment:

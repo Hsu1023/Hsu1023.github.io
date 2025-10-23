@@ -1,17 +1,18 @@
 name: Docker Slim
 
 #Only trigger, when the build workflow succeeded
-on:
-  workflow_run:
-    workflows: ["Docker Image CI"]
-    types:
-      - completed
+# on:
+#   workflow_run:
+#     workflows: ["Docker Image CI"]
+#     types:
+#       - completed
 
 # on:
 #   push:
 #     branches:
 #       - 'master'
-
+on:
+  workflow_dispatch: {}   # 手动触发；去掉 repository_dispatch
 jobs:
   build:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow

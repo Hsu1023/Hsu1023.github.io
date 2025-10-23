@@ -1,9 +1,11 @@
 name: Check for broken links on site
 
+# on:
+#   workflow_run:
+#     workflows: [Deploy site]
+#     types: [completed]
 on:
-  workflow_run:
-    workflows: [Deploy site]
-    types: [completed]
+  workflow_dispatch: {}   # 手动触发；去掉 repository_dispatch
 
 jobs:
   check-links-on-site:
