@@ -778,7 +778,10 @@ footer.sticky-bottom {
   }
 }
 // Publications
-
+.note-tag {
+  color: orange;        /* 或 #d00000 之类好看一点的红 */
+  font-weight: 600;  /* 可选，加一点粗 */
+}
 .publications {
   margin-top: 2rem;
 
