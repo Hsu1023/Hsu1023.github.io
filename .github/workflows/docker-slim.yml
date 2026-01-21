@@ -12,12 +12,11 @@ name: Docker Slim
 #     branches:
 #       - 'master'
 on:
-  workflow_dispatch: {}   # 手动触发；去掉 repository_dispatch
+  workflow_dispatch: {}   # 仅手动触发
 jobs:
   build:
     # https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#running-a-workflow-based-on-the-conclusion-of-another-workflow
-    if: ${{ github.event.workflow_run.conclusion == 'success' and github.repository_owner == 'alshedivat' }}
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-22.04
     defaults:
       run:
         working-directory: ${{ github.workspace }}
@@ -25,12 +24,6 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-
-      - name: Login
-        uses: docker/login-action@v3
-        with:
-          username: ${{ secrets.DOCKER_USERNAME }}
-          password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: update docker-compose
         shell: bash
@@ -40,6 +33,7 @@ jobs:
 
       - uses: kitabisa/docker-slim-action@v1.1.1
         env:
+          NODE_TLS_REJECT_UNAUTHORIZED: 0
           DSLIM_PULL: true
           DSLIM_COMPOSE_FILE: ${{ github.workspace }}/docker-compose.yml
           DSLIM_TARGET_COMPOSE_SVC: jekyll
@@ -47,6 +41,3 @@ jobs:
         with:
           target: amirpourmand/al-folio
           tag: "slim"
-
-      # Push to the registry
-      - run: docker image push amirpourmand/al-folio:slim
