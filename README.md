@@ -4,6 +4,7 @@
 ```bash
 sudo bundle install
 sudo bundle exec jekyll serve --lsi --livereload
+bundle exec jekyll serve --lsi --livereload
 ```
 
 <div align="center">
