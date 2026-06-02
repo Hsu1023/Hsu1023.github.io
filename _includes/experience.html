@@ -1,0 +1,48 @@
+<div class="experience">
+
+  <ul class="exp-list">
+    {% for e in site.data.experience %}
+    <li class="exp-item">
+      <div class="exp-logo">
+        {% if e.company_url %}
+          <a href="{{ e.company_url }}" target="_blank" rel="noopener">
+            <img src="/assets/img/experience_logo/{{ e.logo | relative_url }}" alt="{{ e.company }} logo">
+          </a>
+        {% else %}
+          <img src="/assets/img/experience_logo/{{ e.logo | relative_url }}" alt="{{ e.company }} logo">
+        {% endif %}
+      </div>
+
+      <div class="exp-content">
+        <div class="exp-head">
+          <h3 class="exp-title">
+            <span class="position">{{ e.position }}</span>
+            <span class="at"> @ </span>
+            {% if e.company_url %}
+              <a class="company" href="{{ e.company_url }}" target="_blank" rel="noopener">{{ e.company }}</a>
+            {% else %}
+              <span class="company">{{ e.company }}</span>
+            {% endif %}
+          </h3>
+
+          <div class="exp-meta">
+            <span class="dates">{{ e.start }} – {{ e.end }}</span>
+          </div>
+        </div>
+
+        {% if e.location %}
+          <div class="exp-location">{{ e.location }}</div>
+        {% endif %}
+
+        {% if e.highlights %}
+          <ul class="exp-highlights">
+            {% for h in e.highlights %}
+              <li>{{ h }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</div>

@@ -18,6 +18,7 @@ news:
   scrollable: true # adds a vertical scroll bar if there are more than 3 news items
 papers: true # includes a list of papers marked as "selected={true}"
 education: true # includes a list of education items
+experience: true # includes a list of experience items
 awards: true # includes a list of awards & honors items
 services: true # includes a list of services items
 

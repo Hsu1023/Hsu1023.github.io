@@ -61,6 +61,11 @@ layout: default
             <h2>Education</h2>
             {%- include education.html %}
           {%- endif %}
+
+          {% if page.experience -%}
+            <h2>Experience</h2>
+            {%- include experience.html %}
+          {%- endif %}
           
 
           <!-- Selected papers -->
