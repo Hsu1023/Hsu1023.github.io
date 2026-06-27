@@ -63,14 +63,14 @@ layout: default
           {%- endif %}
 
           {% if page.experience -%}
-            <h2>Experience</h2>
+            <h2 class="section-heading section-heading-compact">Experience</h2>
             {%- include experience.html %}
           {%- endif %}
           
 
           <!-- Selected papers -->
           {% if page.papers -%}
-            <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
+            <h2 class="section-heading section-heading-compact"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
             {%- include papers.html %}
           {%- endif %}
           
@@ -87,35 +87,4 @@ layout: default
           {%- endif %}
         
         </article>
-
-<div style="text-align:center; margin-top:10px;">
-  <!-- 分隔线 -->
-  <hr style="border:0; border-top:1px solid var(--global-divider-color, #e5e7eb); width:min(720px, 92%); margin:28px auto 16px auto;">
-
-  <h3 style="margin:0 0 10px 0;">Site Analytics</h3>
-  <p style="margin:0 0 12px 0; color:var(--global-text-color-light, #6b7280);">
-    Visitor map and page-view statistics.
-  </p>
-
-  <a
-    href="https://clustrmaps.com/site/1c1oi"
-    title="Open ClustrMaps"
-    style="display:inline-block; margin-bottom:14px; padding:8px 14px; border:1px solid var(--global-theme-color, #0f766e); border-radius:999px; color:var(--global-theme-color, #0f766e); text-decoration:none; font-weight:600;"
-  >
-    Open Detailed Analytics
-  </a>
-
-  <div style="display:flex; justify-content:center;">
-    <a href="https://clustrmaps.com/site/1c1oi" title="ClustrMaps" style="display:inline-block; width:clamp(160px, 34vw, 300px);">
-      <img
-        src="https://www.clustrmaps.com/map_v2.png?d=0ivL951BYQhgdBrwSBwALql27Fh5Q3TFyHnbC_TQN3M&cl=ffffff"
-        alt="Visitor map"
-        style="display:block; width:100%; height:auto; min-height:120px; border:0; border-radius:12px; background:rgba(127,127,127,0.08);"
-        loading="lazy"
-        decoding="async"
-        referrerpolicy="no-referrer-when-downgrade"
-      >
-    </a>
-  </div>
-</div>
-</div>
+      </div>
