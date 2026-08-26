@@ -35,8 +35,8 @@ services: true # includes a list of services items
 
 Welcome to my homepage! 
 
-I am a PhD student at the University of Illinois at Urbana-Champaign, currently advised by Prof. Hanghang Tong. Prior to this, I obtained my bachelor's degree in Software Engineering from Tsinghua University.
+I am a second-year PhD student at the University of Illinois at Urbana-Champaign, advised by Prof. Hanghang Tong. Prior to this, I obtained my bachelor's degree in Software Engineering from Tsinghua University.
 
 
-My research interests include <u>Efficient Deep Learning</u> and <u>(Multimodal) Large Language Models</u>.
+My research interests include <u>Efficient Machine Learning</u> and <u>(Multimodal) Large Language Models</u>.
 <p></p>
