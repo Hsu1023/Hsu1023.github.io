@@ -70,7 +70,7 @@ layout: default
 
           <!-- Selected papers -->
           {% if page.papers -%}
-            <h2 class="section-heading section-heading-compact"><a href="{{ '/publications/' | relative_url }}" style="color: inherit;">Publications</a></h2>
+            <h2 class="section-heading section-heading-compact">Selected Publications <a class="publication-list-link" href="{{ '/publication/' | relative_url }}">[full list]</a></h2>
             {%- include papers.html %}
           {%- endif %}
           

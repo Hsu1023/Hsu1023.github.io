@@ -1,5 +1,5 @@
 
           <p class="publication-note">* denotes equal contribution.</p>
           <div class="publications">
-            {% bibliography -f {{ site.scholar.bibliography }} %}
+            {% bibliography -f {{ site.scholar.bibliography }} -q @*[selected=true]* %}
           </div>

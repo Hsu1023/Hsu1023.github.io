@@ -1242,6 +1242,15 @@ footer.sticky-bottom {
   }
 }
 
+.publication-list-link {
+  display: inline-block;
+  margin-left: 0.4rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  white-space: nowrap;
+  vertical-align: baseline;
+}
+
 .publication-note {
   margin: 0.05rem 0 0.08rem;
   font-size: 0.86rem;
