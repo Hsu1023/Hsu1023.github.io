@@ -8,8 +8,16 @@ nav_order: 1
 ---
 <!-- _pages/publications.md -->
 <p class="publication-note">* denotes equal contribution.</p>
+<h2>First / Co-first Author</h2>
 <div class="publications">
 
-{% bibliography -f {{ site.scholar.bibliography }} %}
+{% bibliography -f {{ site.scholar.bibliography }} -q @*[authorship=first]* %}
+
+</div>
+
+<h2>Collaborative Work</h2>
+<div class="publications publications-other">
+
+{% bibliography -f {{ site.scholar.bibliography }} -q @*[authorship=other]* %}
 
 </div>

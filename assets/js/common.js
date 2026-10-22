@@ -47,3 +47,48 @@ $(document).ready(function() {
   });
 });
 
+
+// Keep collaborative author previews on one line, with at most five names.
+document.querySelectorAll('[data-collaborative-authors]').forEach(function (row) {
+  const authors = Array.from(row.querySelectorAll('.collaborative-author'));
+  const toggle = row.querySelector('.collaborative-author-toggle');
+  let expanded = false;
+
+  function renderAuthors() {
+    row.classList.toggle('authors-collapsed', !expanded);
+    authors.forEach(function (author) { author.hidden = false; });
+    toggle.hidden = false;
+    toggle.setAttribute('aria-expanded', String(expanded));
+    if (expanded) {
+      toggle.textContent = 'Show fewer';
+      return;
+    }
+
+    let visible = Math.min(5, authors.length);
+    function updatePreview() {
+      authors.forEach(function (author, index) { author.hidden = index >= visible; });
+      const remaining = authors.length - visible;
+      toggle.hidden = remaining === 0;
+      toggle.textContent = ', ' + remaining + ' more author' + (remaining === 1 ? '' : 's');
+    }
+    updatePreview();
+    while (visible > 1 && row.scrollWidth > row.clientWidth) {
+      visible -= 1;
+      updatePreview();
+    }
+  }
+
+  toggle.addEventListener('click', function () {
+    expanded = !expanded;
+    renderAuthors();
+  });
+  let lastWidth;
+  new ResizeObserver(function () {
+    if (row.clientWidth !== lastWidth) {
+      lastWidth = row.clientWidth;
+      renderAuthors();
+    }
+  }).observe(row);
+  renderAuthors();
+  if (document.fonts) document.fonts.ready.then(renderAuthors);
+});

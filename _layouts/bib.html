@@ -1,8 +1,12 @@
 ---
 ---
 <!-- _layouts/bib.html -->
+      {%- assign show_publication_thumbnail = false -%}
+      {%- if site.enable_publication_thumbnails and entry.authorship != 'other' -%}
+        {%- assign show_publication_thumbnail = true -%}
+      {%- endif -%}
       <div class="row publication-card">
-        {%- if site.enable_publication_thumbnails -%}
+        {%- if show_publication_thumbnail -%}
         <div class="col-sm-2 publication-media {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
@@ -30,7 +34,7 @@
         {%- endif -%}
 
         <!-- Entry bib key -->
-        <div id="{{entry.key}}" class="publication-body {% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
+        <div id="{{entry.key}}" class="publication-body {% if show_publication_thumbnail %}col-sm-8{% else %}col-sm-12{% endif %}">
         <!-- Title -->
         <div class="title">{{entry.title}}</div>
 
@@ -61,11 +65,11 @@
           {{ entry.note | strip }}
         </div>
         <!-- Author -->
-        <div class="author">
+        <div class="author"{% if entry.authorship == 'other' %} data-collaborative-authors{% endif %}>
         {% assign author_array_size = entry.author_array | size %}
 
         {% assign author_array_limit = author_array_size %}
-        {%- if site.max_author_limit and author_array_size > site.max_author_limit %}
+        {%- if entry.authorship != 'other' and site.max_author_limit and author_array_size > site.max_author_limit %}
           {% assign author_array_limit = site.max_author_limit %}
         {% endif %}
 
@@ -87,20 +91,25 @@
             {%- endfor -%}
           {%- endif -%}
 
+          {%- if entry.authorship == 'other' -%}<span class="collaborative-author">{%- endif -%}
           {%- if forloop.length > 1 -%}
             {%- if forloop.first == false -%},&nbsp;{%- endif -%}
-            {%- if forloop.last and author_array_limit == author_array_size -%}and&nbsp;{%- endif -%}
+            {%- if forloop.last and author_array_limit == author_array_size and entry.authorship != 'other' -%}and&nbsp;{%- endif -%}
           {%- endif -%}
           {%- if author_is_self -%}
             <em>{{author.first}} {{author.last}}</em>
           {%- else -%}
-            {%- if coauthor_url -%}
+            {%- if coauthor_url and entry.authorship != 'other' -%}
               <a href="{{coauthor_url}}">{{author.first}} {{author.last}}</a>
             {%- else -%}
               {{author.first}} {{author.last}}
             {%- endif -%}
           {%- endif -%}
+          {%- if entry.authorship == 'other' -%}</span>{%- endif -%}
         {%- endfor -%}
+        {%- if entry.authorship == 'other' -%}
+          <button type="button" class="collaborative-author-toggle" aria-expanded="false" hidden></button>
+        {%- endif -%}
         {%- assign more_authors = author_array_size | minus: author_array_limit -%}
 
         {%- assign more_authors_hide = more_authors | append: " more author" -%}
@@ -136,6 +145,7 @@
 
         </div>
 
+          {% unless entry.authorship == 'other' %}
           <!-- Links/Buttons -->
           <div class="links">
           {%- if entry.abstract %}
@@ -248,5 +258,6 @@
             {% highlight bibtex %}{{ entry.bibtex | hideCustomBibtex }}{% endhighlight %}
           </div>
           {%- endif %}
+          {% endunless %}
         </div>
       </div>

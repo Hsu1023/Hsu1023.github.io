@@ -291,6 +291,9 @@ scholar:
   details_link: Details
 
   query: "@*"
+  # Use exact publication dates within each year when available.
+  sort_by: [year, publication_date]
+  order: descending
   group_by: year
   group_order: descending
 
