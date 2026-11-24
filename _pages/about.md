@@ -2,6 +2,8 @@
 layout: about
 title: Home
 permalink: /
+internship_notice: >-
+  Seeking **research internships** in the United States for **Spring / Summer 2027**.
 # subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
 
 profile:

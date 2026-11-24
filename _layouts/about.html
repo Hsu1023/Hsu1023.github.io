@@ -14,6 +14,12 @@ layout: default
           <p class="desc">{{ page.subtitle }}</p>
         </header>
 
+        {% if page.internship_notice %}
+        <aside class="internship-notice" aria-label="Internship availability">
+          <div class="internship-notice-text">{{ page.internship_notice | markdownify }}</div>
+        </aside>
+        {% endif %}
+
         <article>
           {% if page.profile -%}
           <div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">

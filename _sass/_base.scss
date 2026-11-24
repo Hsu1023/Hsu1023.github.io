@@ -159,6 +159,54 @@ blockquote {
   color: var(--global-theme-color);
 }
 
+// Homepage internship availability
+
+.internship-notice {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin: 0 0 1.75rem;
+  padding: 0.95rem 1.15rem;
+  border: 1px solid color-mix(in srgb, var(--global-theme-color) 22%, var(--global-divider-color));
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--global-theme-color) 6%, var(--global-bg-color));
+
+  &::before {
+    content: "";
+    flex: 0 0 0.5rem;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--global-theme-color);
+    box-shadow: 0 0 0 4px color-mix(in srgb, var(--global-theme-color) 12%, transparent);
+  }
+
+  p {
+    margin: 0;
+    font-size: 0.95rem;
+    font-weight: 500;
+    line-height: 1.65;
+  }
+
+  strong {
+    color: var(--global-theme-color);
+    font-weight: 700;
+  }
+}
+
+@media (max-width: 575px) {
+  .internship-notice {
+    align-items: baseline;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+
+    p {
+      font-size: 0.9rem;
+    }
+  }
+}
+
 // Profile
 
 .profile {
